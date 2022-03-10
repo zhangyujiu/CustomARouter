@@ -1,0 +1,23 @@
+ext {
+
+    android = [
+            compileSdkVersion: 31,
+            buildToolsVersion: "30.0.3",
+            applicationId    : "com.jk.customarouter",
+            minSdkVersion    : 21,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0.0",
+    ]
+    base_lib = [
+            // 基础库
+            "kotlinstd"       : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            "corektx"         : "androidx.core:core-ktx:1.7.0",
+            "appcompat"       : "androidx.appcompat:appcompat:1.2.0",
+            "constraintlayout": "androidx.constraintlayout:constraintlayout:2.0.4",
+            "recyclerview"    : "androidx.recyclerview:recyclerview:1.1.0",
+            "material"        : "com.google.android.material:material:1.4.0",
+            "multidex"        : "androidx.multidex:multidex:2.0.1",
+    ]
+
+}

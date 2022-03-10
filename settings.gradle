@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        google()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+rootProject.name = "CustomARouter"
+include ':app'
+include ':order'
+include ':person'
+include ':arouter_annotation'
+include ':arouter_processor'
+include ':arouter_api'
+include ':common'

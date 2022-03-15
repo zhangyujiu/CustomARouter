@@ -49,5 +49,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     api project(path: ':arouter_api')
     kapt project(path: ':arouter_processor')
-
+    api 'com.google.auto.service:auto-service:1.0-rc7'
+    kapt 'com.google.auto.service:auto-service:1.0-rc7'
 }

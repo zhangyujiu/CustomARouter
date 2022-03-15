@@ -34,6 +34,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main{
+            if (isRelease.toBoolean()) {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    //release 时 manifest 目录下文件不需要合并到主工程
+                    exclude 'manifest/**'
+                }
+            } else {
+                manifest.srcFile 'src/main/manifest/AndroidManifest.xml'
+            }
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
